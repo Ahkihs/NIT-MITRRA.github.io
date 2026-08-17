@@ -12,19 +12,71 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
-      <link rel="stylesheet" href="hostel.css" />
-      <link rel="stylesheet" href="footer.css" />
-      <link rel="stylesheet" href="navbar2.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Mess Facilities</title>
+    <title>Mess & Tiffin Facilities Near NIT Raipur | Homestyle Food & Thalis | NITmitRRa</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Discover verified student mess and tiffin services near NIT Raipur (Kota, Amanaka, Saraswati Nagar). Filter by monthly subscription rates, meal plans, thalis, and ratings.">
+    <meta name="keywords" content="mess near NIT Raipur, student mess near NITRR, tiffin center near NIT Raipur, monthly mess Kota Raipur, homestyle food near NIT Raipur, NITmitRRa mess">
+    <meta name="author" content="NITmitRRa Team, NIT Raipur">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#741717">
+    <link rel="canonical" href="mess.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nitmitrra.com/mess.html">
+    <meta property="og:title" content="Mess & Tiffin Facilities Near NIT Raipur | NITmitRRa">
+    <meta property="og:description" content="Find the best student mess and tiffin providers near NIT Raipur campus with pricing, service details, and ratings.">
+    <meta property="og:image" content="images/logo3.png">
+    <meta property="og:site_name" content="NITmitRRa">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mess & Tiffin Services Near NIT Raipur | NITmitRRa">
+    <meta name="twitter:description" content="Browse monthly student messes and home-cooked tiffin services near NIT Raipur.">
+    <meta name="twitter:image" content="images/logo3.png">
+
+    <!-- Stylesheets & Fonts -->
+    <link rel="stylesheet" href="hostel.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar2.css">
     <link rel="shortcut icon" href="images/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Student Mess & Tiffin Services Near NIT Raipur",
+      "description": "Directory of affordable and verified student mess and tiffin services near NIT Raipur campus.",
+      "url": "https://nitmitrra.com/mess.html",
+      "numberOfItems": 9,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Apna Mess",
+          "description": "Near NITRR Campus. Lunch & Dinner Thali service starting from ₹2,500/month."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Maa Ki Rasoi",
+          "description": "Near NITRR. Homestyle Healthy Food from ₹2,200/month."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Raipur Restaurant",
+          "description": "Raipur, near NIT. Lunch & Dinner Thali from ₹3,200/month."
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -112,236 +164,333 @@
     <section class="hostel">
         <div class="container27">
             <div class="girlshostelhead">
-                MESS FACILITIES
+                MESS & TIFFIN FACILITIES NEAR NIT RAIPUR
             </div>
+            <p class="hostel-subhead">Find affordable and hygienic mess, tiffin services, and restaurants around NIT Raipur</p>
+
+            <!-- Top Actions & Live Count -->
+            <div class="hostel-top-actions">
+                <div class="hostel-counts">
+                    <span>Showing</span>
+                    <span class="count-badge" id="visibleCount">9</span>
+                    <span>of <span id="totalCount">9</span> Mess Facilities</span>
+                </div>
+                <button type="button" class="btn-add-hostel" id="openAddHostelModal">
+                    <i class="fas fa-plus-circle"></i> Add New Mess / Tiffin
+                </button>
+            </div>
+
+            <!-- Filter & Sort Toolbar -->
+            <div class="filter-toolbar">
+                <div class="filter-row-main">
+                    <!-- Search Input -->
+                    <div class="search-box-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="searchHostel" class="search-input" placeholder="Search by name, location (e.g. Kota, Saraswati Nagar)...">
+                        <button type="button" id="searchClear" class="search-clear-btn">&times;</button>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="filter-select-group">
+                        <label for="filterPrice" class="filter-label">Monthly Rate</label>
+                        <select id="filterPrice" class="filter-select">
+                            <option value="all">All Prices</option>
+                            <option value="under-3000">Under ₹3,000</option>
+                            <option value="3000-5000">₹3,000 - ₹5,000</option>
+                            <option value="above-5000">Above ₹5,000</option>
+                        </select>
+                    </div>
+
+                    <!-- Rating Filter -->
+                    <div class="filter-select-group">
+                        <label for="filterRating" class="filter-label">Min Rating</label>
+                        <select id="filterRating" class="filter-select">
+                            <option value="all">All Ratings</option>
+                            <option value="5">5★ Only</option>
+                            <option value="4">4★ & above</option>
+                        </select>
+                    </div>
+
+                    <!-- Location / Area Filter -->
+                    <div class="filter-select-group">
+                        <label for="filterDistance" class="filter-label">Area</label>
+                        <select id="filterDistance" class="filter-select">
+                            <option value="all">All Areas</option>
+                            <option value="under-1km">Kota</option>
+                            <option value="under-500m">Saraswati Nagar</option>
+                        </select>
+                    </div>
+
+                    <!-- Sort By -->
+                    <div class="filter-select-group">
+                        <label for="sortHostel" class="filter-label">Sort By</label>
+                        <select id="sortHostel" class="filter-select">
+                            <option value="default">Default</option>
+                            <option value="rating-desc">Rating: High to Low</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="name-asc">Name: A to Z</option>
+                        </select>
+                    </div>
+
+                    <!-- Reset Button -->
+                    <button type="button" id="resetFilters" class="btn-reset-filters">
+                        <i class="fas fa-undo"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- No Results Box -->
+            <div id="noResultsBox" class="no-results-box">
+                <i class="fas fa-utensils"></i>
+                <h3>No Mess Facilities Found</h3>
+                <p>We couldn't find any mess or tiffin service matching your active search and filter criteria. Try adjusting your filters.</p>
+                <button type="button" id="resetFiltersEmpty" class="btn-reset-filters">Reset All Filters</button>
+            </div>
+
+            <!-- Cards Grid -->
             <div class="row">
-                <div class="card">
-                    <img src="images/mess.png" alt="">
-                    <h4>Tiffin System</h4>
-                    <p>
-                        <ul>
-                            <li>Rate: 3000</li>
-                            <li>Contact Info: 9827968231</li>
-                        </ul>
-                    </p>
-                    <p>Rating: <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </p>
-                    
-                </div>
-                <div class="card">
-                    <img src="images/mess.png" alt="">
-                    <h4>Maa Ki Rasoi </h4>
-                    <ul>
-                        
-                        <li>Rate:2200</li>
-                        
-                        <li>Contact Info: +919752223529</li>
-                    </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                    
-                </div>
-                <div class="card">
-                    <img src="images/mess.png" alt="">
-                    <h4>Raipur Restaurant </h4>
-                    <ul>
-                    
-                        <li>Rate:Rs 3200 monthly for lunch and dinner and <br> Rs 1700 for either lunch or dinner </li>
-                        
-                        <li>Contact Info:70002 58155</li>
-                    </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-
-                </div>
-                <div class="card">
-                    <img src="images/mess.png" alt="">
+                <div class="card" data-name="Tiffin System - Amanaka" data-location="Amanaka, Near NITRR" data-price="3000" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/mess.png" alt="Tiffin System">
+                    </div>
                     <h4>Tiffin System</h4>
                     <ul>
-                        
-                        <li>Rate: 2500</li>
-                        <li>Contact Info:8319502182</li>
+                        <li><strong>Service:</strong> Daily Tiffin & Meal Service</li>
+                        <li><strong>Rate:</strong> ₹3,000 / month</li>
+                        <li><strong>Contact:</strong> 98279 68231</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                    
-                </div>
-               
-                <div class="card">
-                    <img src="images/mess.png" alt="">
-                    <h4>Shree Ram bhojnalaya and fast food, kota</h4>
-                    <ul>
-                  
-                        <li>Rate: ₹3000 (lunch+dinner)</li>
-        
-                    </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-               
-                   
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:9827968231" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
 
-                <div class="card">
-                    <img src="images/mess.png" alt="">
+                <div class="card" data-name="Maa Ki Rasoi" data-location="Near NITRR" data-price="2200" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/mess.png" alt="Maa Ki Rasoi">
+                    </div>
+                    <h4>Maa Ki Rasoi</h4>
+                    <ul>
+                        <li><strong>Service:</strong> Homestyle Healthy Food</li>
+                        <li><strong>Rate:</strong> ₹2,200 / month</li>
+                        <li><strong>Contact:</strong> +91 97522 23529</li>
+                    </ul>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:+919752223529" class="btn"><i class="fas fa-phone"></i> Contact</a>
+                </div>
+
+                <div class="card" data-name="Raipur Restaurant" data-location="Raipur, near NIT" data-price="3200" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/mess.png" alt="Raipur Restaurant">
+                    </div>
+                    <h4>Raipur Restaurant</h4>
+                    <ul>
+                        <li><strong>Service:</strong> Lunch & Dinner Thali</li>
+                        <li><strong>Rate:</strong> ₹3,200 (Both) / ₹1,700 (One meal)</li>
+                        <li><strong>Contact:</strong> 70002 58155</li>
+                    </ul>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:7000258155" class="btn"><i class="fas fa-phone"></i> Contact</a>
+                </div>
+
+                <div class="card" data-name="Tiffin System" data-location="Near NITRR" data-price="2500" data-rating="5">
+                    <div class="card-img-container">
+                        <img src="images/mess.png" alt="Tiffin System">
+                    </div>
+                    <h4>Tiffin System</h4>
+                    <ul>
+                        <li><strong>Service:</strong> Doorstep Tiffin Delivery</li>
+                        <li><strong>Rate:</strong> ₹2,500 / month</li>
+                        <li><strong>Contact:</strong> 83195 02182</li>
+                    </ul>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:8319502182" class="btn"><i class="fas fa-phone"></i> Contact</a>
+                </div>
+
+                <div class="card" data-name="Shree Ram bhojnalaya and fast food, kota" data-location="Kota" data-price="3000" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/mess.png" alt="Shree Ram bhojnalaya">
+                    </div>
+                    <h4>Shree Ram Bhojnalaya & Fast Food</h4>
+                    <ul>
+                        <li><strong>Location:</strong> Kota, Raipur</li>
+                        <li><strong>Service:</strong> Lunch + Dinner</li>
+                        <li><strong>Rate:</strong> ₹3,000 / month</li>
+                    </ul>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="studyresources.html" class="btn"><i class="fas fa-utensils"></i> Details</a>
+                </div>
+
+                <div class="card" data-name="Friends Zone" data-location="Near NITRR" data-price="2800" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/mess.png" alt="Friends Zone">
+                    </div>
                     <h4>Friends Zone</h4>
                     <ul>
-                    <li>Rate: 2800</li>
+                        <li><strong>Service:</strong> Student Mess & Snacks</li>
+                        <li><strong>Rate:</strong> ₹2,800 / month</li>
+                        <li><strong>Timings:</strong> Breakfast, Lunch & Dinner</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-               
-                  
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="studyresources.html" class="btn"><i class="fas fa-utensils"></i> Details</a>
                 </div>
 
-
-                                <div class="card">
-                    <img src="images/mess.png" alt="">
-                    <h4>Shri Balaji Rajasthani Thali Restaurant</h4>
+                <div class="card" data-name="Shri Balaji Rajasthani Thali Restaurant" data-location="Kota" data-price="2800" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/mess.png" alt="Shri Balaji Rajasthani Thali">
+                    </div>
+                    <h4>Shri Balaji Rajasthani Thali</h4>
                     <ul>
-                        <li>Location: Kota </li>
-                    <li>Rate: 2800</li>
+                        <li><strong>Location:</strong> Kota, Raipur</li>
+                        <li><strong>Service:</strong> Unlimited Rajasthani Thali</li>
+                        <li><strong>Rate:</strong> ₹2,800 / month</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-               
-                  
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="studyresources.html" class="btn"><i class="fas fa-utensils"></i> Details</a>
                 </div>
 
-
-                                <div class="card">
-                    <img src="images/mess.png" alt="">
+                <div class="card" data-name="Mess near Saraswati Nagar" data-location="Saraswati Nagar" data-price="2600" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/mess.png" alt="Mess near Saraswati Nagar">
+                    </div>
                     <h4>Mess near Saraswati Nagar</h4>
                     <ul>
-                    <li>Rate: 2600</li>
-                        <li>Contact:+91 88719 93000</li>
+                        <li><strong>Location:</strong> Near Saraswati Nagar Station</li>
+                        <li><strong>Rate:</strong> ₹2,600 / month</li>
+                        <li><strong>Contact:</strong> +91 88719 93000</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-               
-                  
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:+918871993000" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
-             
-                <div class="card">
-                    <img src="images/mess.png" alt="">
+
+                <div class="card" data-name="Shree Tiffin Center" data-location="Near NITRR" data-price="2500" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/mess.png" alt="Shree Tiffin Center">
+                    </div>
                     <h4>Shree Tiffin Center</h4>
                     <ul>
-                        <li>Contact Info:6263368489</li>
+                        <li><strong>Service:</strong> Pure Veg Tiffin Service</li>
+                        <li><strong>Rate:</strong> ₹2,500 / month</li>
+                        <li><strong>Contact:</strong> 62633 68489</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-               
-                  
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:6263368489" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
-
+            </div>
+        </div>
     </section>
 
+    <!-- Embedded Google Form Modal -->
+    <div id="addHostelModal" class="modal-backdrop">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header-text">
+                    <h3><i class="fas fa-plus-circle"></i> Add New Mess / Tiffin Facility</h3>
+                    <p>Submit details to list your mess or tiffin service on NIT-MITRRA</p>
+                </div>
+                <div class="modal-header-actions">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSSZwcrIsM2cvFoISH-twlLFx5209JEzxH3mVhksL3O1lZkw/viewform?usp=dialog" target="_blank" class="btn-open-external">
+                        <i class="fas fa-external-link-alt"></i> Open in New Tab
+                    </a>
+                    <button type="button" id="closeAddHostelModal" class="modal-close-btn">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSSZwcrIsM2cvFoISH-twlLFx5209JEzxH3mVhksL3O1lZkw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading Google Form...</iframe>
+            </div>
+        </div>
+    </div>
 
-
-
-        <!-- footer -->
-        <section class="foot">
-            <footer>
-               <div class="container">
-                   <div class="row">
-                         <div class="col" id="company">
-                             <img src="images/logo3.png" alt="" class="logo">
-                             
-                             <p>
-                               Made with Love, By Room No:31 <i class="fa-regular fa-heart"></i>
-                             </p>
-                            
-                             <div class="social">
-                                <a href="https://www.linkedin.com/in/mansi-chandrakar-85494a2a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.linkedin.com/in/shikha-yadav-3830902b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.linkedin.com/in/mokshda-bhatt-7878b5288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-                               <a href="https://www.linkedin.com/in/rubeena-roy-318b69279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-                             </div>
+    <!-- footer -->
+    <section class="foot">
+        <footer>
+           <div class="container">
+               <div class="row">
+                     <div class="col" id="company">
+                         <img src="images/logo3.png" alt="" class="logo">
+                         
+                         <p>
+                           Made with Love, By Room No:31 <i class="fa-regular fa-heart"></i>
+                         </p>
+                        
+                         <div class="social">
+                            <a href="https://www.linkedin.com/in/mansi-chandrakar-85494a2a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/shikha-yadav-3830902b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/mokshda-bhatt-7878b5288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                           <a href="https://www.linkedin.com/in/rubeena-roy-318b69279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
                          </div>
-       
-       
-                         <div class="col" id="services">
-                            <h3>Links</h3>
-                            <div class="links">
-                               <a href="Home.html">Home</a>
-                               <a href="studyresources.html">Study Resources</a>
-                               <a href="girlshostel.html">Near by Hostels</a>
-                               <a href="club.html">Clubs and Fests</a>
-                            </div>
-                         </div>
-       
-                         <div class="col" id="useful-links">
-                            <h3>Links</h3>
-                            <div class="links">
-                               <!-- <a href="#">Subject Guidance</a> -->
-                               <a href="tourist_att.html">Explore Raipur</a>
-                               <a href="queryform.html"> Ask your Doubts</a>
-                               <a href="faqindex.html">FAQ</a>
-                               <a href="team.html">Our Team</a>
-                            </div>
-                         </div>
-       
-                         <!-- <div class="col" id="contact">
-                             <h3>Contact</h3>
-                             <div class="contact-details">
-                                <i class="fa fa-location"></i>
-                                <p>FF-42, Procube Avenue, <br> NY, USA</p>
-                             </div>
-                             <div class="contact-details">
-                                <i class="fa fa-phone"></i>
-                                <p>+1-8755856858</p>
-                             </div>
-                         </div> -->
-                   </div>
-       
-                   <!-- <div class="row">
-                         <div class="form">
-                           <form action="">
-                               <input type="text" placeholder="Email here...">
-                               <button><i class="fa fa-paper-plane"></i></button>
-                           </form>
-                         </div>
-                   </div> -->
-       
+                     </div>
+   
+                     <div class="col" id="services">
+                        <h3>Links</h3>
+                        <div class="links">
+                           <a href="index.html">Home</a>
+                           <a href="studyresources.html">Study Resources</a>
+                           <a href="girlshostel.html">Near by Hostels</a>
+                           <a href="club.html">Clubs and Fests</a>
+                        </div>
+                     </div>
+   
+                     <div class="col" id="useful-links">
+                        <h3>Links</h3>
+                        <div class="links">
+                           <a href="tourist_att.html">Explore Raipur</a>
+                           <a href="queryform.html">Ask your Doubts</a>
+                           <a href="faqindex.html">FAQ</a>
+                           <a href="team.html">Our Team</a>
+                        </div>
+                     </div>
                </div>
-            </footer>
-           </section>
+           </div>
+        </footer>
+    </section>
 
-           <script src="navbar2.js"></script>
+    <script src="navbar2.js"></script>
+    <script src="hostel_filter.js"></script>
 </body>
 </html>

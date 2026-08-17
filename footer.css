@@ -2,54 +2,49 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    /* display: flex; */
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    /* min-height: 62vh; */
 }
 footer{
-    /* margin-top: 1px; */
      background-color:#741717;
      position: relative;
      width: 100%;
      min-height: 250px;
      padding: 3rem 1rem;
 }
-.container {
-    
+footer .container {
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
 }
-.row{
+footer .row{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
 }
 
-.col{
+footer .col{
     min-width: 250px;
     color:rgb(255, 232, 180);
     font-family: Kanit;
     padding:0 2rem;
 }
-.col .logo{
+footer .col .logo{
     width: 100px;
     margin-bottom:25px;
 }
-.col h3{
+footer .col h3{
     color:rgb(251, 220, 149);
     margin-bottom: 20px;
     position: relative;
     cursor: pointer;
 }
-.col h3::after{
+footer .col h3::after{
     content: '';
     height:3px;
     width:0px;
@@ -60,20 +55,20 @@ footer{
     transition: 0.3s ease;
 
 }
-.col h3:hover::after{
+footer .col h3:hover::after{
     width:30px
 }
-.col .social a i{
+footer .col .social a i{
     color:rgb(255, 232, 180);
     margin-top:2rem;
     margin-right: 5px;
     transition: 0.3s ease;
 }
-.col .social a i:hover{
+footer .col .social a i:hover{
     transform: scale(1.5);
     filter:grayscale(25);
 }
-.col .links a{
+footer .col .links a{
     display: block;
     text-decoration: none;
     color:rgb(255, 232, 180);
@@ -81,7 +76,7 @@ footer{
     position: relative;
     transition: 0.3s ease;
 }
-.col .links a::before{
+footer .col .links a::before{
     content:'';
     height: 16px;
     width:3px;
@@ -92,28 +87,28 @@ footer{
     transition: 0.5s ease;
     opacity: 0;
 }
-.col .links a:hover::before{
+footer .col .links a:hover::before{
     opacity: 1;
 }
-.col .links a:hover{
+footer .col .links a:hover{
     transform: translateX(-8px);
     color:rgb(255, 232, 180);
 }
-.col .contact-details{
+footer .col .contact-details{
     display: inline-flex;
     justify-content: space-between;
 }
-.col .contact-details i{
+footer .col .contact-details i{
     margin-right:15px;
 }
 
 /********** Responsive Design ********/
 @media(max-width:900px)
 {
-  .row{
+  footer .row{
     flex-direction: column;
   }
-  .col{
+  footer .col{
     width: 100%;
     text-align: left;
     margin-bottom: 25px;
@@ -121,10 +116,10 @@ footer{
 }
 @media(max-width:768px)
 {
-  .row{
+  footer .row{
     flex-direction: column;
   }
-  .col{
+  footer .col{
     width: 100%;
     text-align: left;
     margin-bottom: 20px;

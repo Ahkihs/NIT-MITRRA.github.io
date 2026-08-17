@@ -259,10 +259,7 @@ thead th.active,tbody td.active {
 }
 
 .export__file .export__file-btn {
-    display: inline-block;
-    width: 2rem;
-    height: 2rem;
-    background: #fff6 url(images/export.png) center / 80% no-repeat;
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     transition: .2s ease-in-out;
 }

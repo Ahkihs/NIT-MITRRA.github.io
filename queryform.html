@@ -12,19 +12,50 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
-      <link rel="stylesheet" href="query.css" />
-      <link rel="stylesheet" href="footer.css" />
-      <link rel="stylesheet" href="navbar2.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Ask Your Doubts</title>
+    <title>Ask Your Doubts | NIT Raipur Student Mentorship & Helpdesk | NITmitRRa</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Have questions about NIT Raipur admissions, campus life, hostels, academics, or syllabus? Reach out to senior mentors via NITmitRRa Ask Your Doubts portal.">
+    <meta name="keywords" content="NIT Raipur helpdesk, NITRR doubts, ask NIT Raipur seniors, NIT Raipur admission guidance, student mentorship NIT Raipur, NITmitRRa doubts">
+    <meta name="author" content="NITmitRRa Team, NIT Raipur">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#741717">
+    <link rel="canonical" href="queryform.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nitmitrra.com/queryform.html">
+    <meta property="og:title" content="Ask Your Doubts - NIT Raipur Student Mentorship | NITmitRRa">
+    <meta property="og:description" content="Submit queries and get answers from experienced seniors and student mentors at NIT Raipur.">
+    <meta property="og:image" content="images/logo3.png">
+    <meta property="og:site_name" content="NITmitRRa">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ask Your Doubts | NIT Raipur Student Helpdesk">
+    <meta name="twitter:description" content="Connect with NIT Raipur seniors for campus guidance, hostel queries, and academic support.">
+    <meta name="twitter:image" content="images/logo3.png">
+
+    <!-- Stylesheets & Fonts -->
+    <link rel="stylesheet" href="query.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar2.css">
     <link rel="shortcut icon" href="images/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "Ask Your Doubts - NIT Raipur Student Helpdesk",
+      "description": "Student mentorship and enquiry portal for prospective and enrolled students of National Institute of Technology Raipur.",
+      "url": "https://nitmitrra.com/queryform.html"
+    }
+    </script>
 </head>
 <body>
 
@@ -116,9 +147,6 @@
     <!-- <div class="queryform"> -->
       <div class="doubt">
 
-    <div class="container22">
-
-      <img src="img/shape.png" class="square" alt="" />
       <div class="form">
         <div class="contact-info">
           <h3 class="title">Ask Your Doubts Here</h3>
@@ -151,31 +179,32 @@
           <span class="circle one"></span>
           <span class="circle two"></span>
 
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <h3 class="title">Contact us</h3>
+          <form action="https://api.web3forms.com/submit" method="POST" id="doubtForm">
+            <h3 class="title">Ask Your Doubt</h3>
+            <input type="hidden" name="access_key" value="d8678038-43a4-4a1b-897e-3049a5a57509">
+            <input type="hidden" name="subject" value="New Doubt Submission from NIT-MITRRA Portal">
+            <input type="hidden" name="from_name" value="NIT-MITRRA Doubts">
+
+            <!-- Full Name Column -->
             <div class="input-container">
-                <input type="hidden" name="access_key" value="d8678038-43a4-4a1b-897e-3049a5a57509">
-             
-              
+              <input type="text" name="name" id="userName" placeholder="Your Full Name" class="input" required minlength="2" maxlength="60" autocomplete="name" />
+            </div>
+
+            <!-- Email Address Column (Strict Validation) -->
             <div class="input-container">
-              <div class="ho">
-                <input type="email" name="name" placeholder="Your Email" class="input" required /></div>
-              
-           
-              
+              <input type="email" name="email" id="userEmail" placeholder="Your Email Address (e.g. name@domain.com)" class="input" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address (e.g. name@domain.com)" autocomplete="email" />
+            </div>
+
+            <!-- Message / Query Textarea -->
             <div class="input-container textarea">
-              <textarea name="message" placeholder="Your Message"  class="input" required></textarea>
-              
-            <input type="submit" value="Send" class="btn" />
+              <textarea name="message" id="userMessage" placeholder="Type your doubt or query regarding NIT Raipur..." class="input" required minlength="5"></textarea>
+            </div>
+
+            <input type="submit" value="Submit Doubt" class="btn" id="submitBtn" />
           </form>
         </div>
       </div>
-      </div>
-
-      
-           
     </div>
-      
   </section>
 
     <!-- footer -->
@@ -256,7 +285,7 @@
 
 
 
-    <script src="app.js"></script>
+    <script src="query.js"></script>
     <script src="navbar2.js"></script>
   </body>
 </html>

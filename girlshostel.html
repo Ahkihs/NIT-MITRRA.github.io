@@ -12,19 +12,71 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        </style>
-      <link rel="stylesheet" href="hostel.css" />
-      <link rel="stylesheet" href="footer.css" />
-      <link rel="stylesheet" href="navbar2.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>GIRLS HOSTELS</title>
+    <title>Girls Hostels Near NIT Raipur | Verified PGs & Safe Accommodations | NITmitRRa</title>
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Explore verified, safe girls hostels and PGs near NIT Raipur (Rohinipuram, Kota, Samta Colony, Amanaka). Filter by rent, distance from NITRR campus, rating, and sharing.">
+    <meta name="keywords" content="girls hostel near NIT Raipur, girls PG near NITRR, NIT Raipur girls hostel, safe girls hostel Raipur, PG in Rohinipuram, student accommodation NIT Raipur, NITmitRRa">
+    <meta name="author" content="NITmitRRa Team, NIT Raipur">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#741717">
+    <link rel="canonical" href="girlshostel.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nitmitrra.com/girlshostel.html">
+    <meta property="og:title" content="Girls Hostels Near NIT Raipur | Verified PGs & Accommodations">
+    <meta property="og:description" content="Discover safe and verified girls hostels near NIT Raipur campus with contact numbers, rates, and distance info.">
+    <meta property="og:image" content="images/logo3.png">
+    <meta property="og:site_name" content="NITmitRRa">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Girls Hostels Near NIT Raipur | NITmitRRa">
+    <meta name="twitter:description" content="Find verified girls hostels and PGs near NIT Raipur campus with rent details and ratings.">
+    <meta name="twitter:image" content="images/logo3.png">
+
+    <!-- Stylesheets & Fonts -->
+    <link rel="stylesheet" href="hostel.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar2.css">
     <link rel="shortcut icon" href="images/logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Girls Hostels Near NIT Raipur",
+      "description": "Directory of verified girls hostels and student accommodations near National Institute of Technology Raipur campus.",
+      "url": "https://nitmitrra.com/girlshostel.html",
+      "numberOfItems": 10,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Mata Gujri Girls Hostel",
+          "description": "Kota Saraswati Nagar, 500m from NITRR. Rates ₹6,000/month."
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kusum Girls Hostel",
+          "description": "Kanchanganga Colony Phase-2, Rohinipuram, 1.5 Km from NITRR. Rates ₹3,000/month."
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Geeta Sadan",
+          "description": "Kota, near railway fatak road, 1.0 Km from NITRR. Rates ₹2,500/month."
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
   
@@ -115,278 +167,373 @@
     <section class="hostel">
         <div class="container27">
             <div class="girlshostelhead">
-                GIRLS HOSTEL
+                GIRLS HOSTELS NEAR NIT RAIPUR
             </div>
+            <p class="hostel-subhead">Explore verified girls hostels, PGs, and rental rooms near NIT Raipur campus</p>
+
+            <!-- Top Actions & Live Count -->
+            <div class="hostel-top-actions">
+                <div class="hostel-counts">
+                    <span>Showing</span>
+                    <span class="count-badge" id="visibleCount">10</span>
+                    <span>of <span id="totalCount">10</span> Hostels</span>
+                </div>
+                <button type="button" class="btn-add-hostel" id="openAddHostelModal">
+                    <i class="fas fa-plus-circle"></i> Add New Girls Hostel
+                </button>
+            </div>
+
+            <!-- Filter & Sort Toolbar -->
+            <div class="filter-toolbar">
+                <div class="filter-row-main">
+                    <!-- Search Input -->
+                    <div class="search-box-wrapper">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="searchHostel" class="search-input" placeholder="Search by name, location (e.g. Samta Colony, Rohinipuram, Kota)...">
+                        <button type="button" id="searchClear" class="search-clear-btn">&times;</button>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="filter-select-group">
+                        <label for="filterPrice" class="filter-label">Monthly Rent</label>
+                        <select id="filterPrice" class="filter-select">
+                            <option value="all">All Prices</option>
+                            <option value="under-3000">Under ₹3,000</option>
+                            <option value="3000-5000">₹3,000 - ₹5,000</option>
+                            <option value="above-5000">Above ₹5,000</option>
+                        </select>
+                    </div>
+
+                    <!-- Rating Filter -->
+                    <div class="filter-select-group">
+                        <label for="filterRating" class="filter-label">Min Rating</label>
+                        <select id="filterRating" class="filter-select">
+                            <option value="all">All Ratings</option>
+                            <option value="4">4★ & above</option>
+                            <option value="3">3★ & above</option>
+                        </select>
+                    </div>
+
+                    <!-- Distance Filter -->
+                    <div class="filter-select-group">
+                        <label for="filterDistance" class="filter-label">Distance</label>
+                        <select id="filterDistance" class="filter-select">
+                            <option value="all">Any Distance</option>
+                            <option value="under-500m">Under 500m</option>
+                            <option value="under-1km">Within 1 km</option>
+                            <option value="under-2km">Within 2 km</option>
+                            <option value="above-2km">2+ km</option>
+                        </select>
+                    </div>
+
+                    <!-- Sort By -->
+                    <div class="filter-select-group">
+                        <label for="sortHostel" class="filter-label">Sort By</label>
+                        <select id="sortHostel" class="filter-select">
+                            <option value="default">Default</option>
+                            <option value="rating-desc">Rating: High to Low</option>
+                            <option value="price-asc">Price: Low to High</option>
+                            <option value="price-desc">Price: High to Low</option>
+                            <option value="distance-asc">Distance: Nearest First</option>
+                            <option value="name-asc">Name: A to Z</option>
+                        </select>
+                    </div>
+
+                    <!-- Reset Button -->
+                    <button type="button" id="resetFilters" class="btn-reset-filters">
+                        <i class="fas fa-undo"></i> Reset
+                    </button>
+                </div>
+            </div>
+
+            <!-- No Results Box -->
+            <div id="noResultsBox" class="no-results-box">
+                <i class="fas fa-building-circle-xmark"></i>
+                <h3>No Hostels Found</h3>
+                <p>We couldn't find any girls hostel matching your active search and filter criteria. Try adjusting your filters.</p>
+                <button type="button" id="resetFiltersEmpty" class="btn-reset-filters">Reset All Filters</button>
+            </div>
+
+            <!-- Cards Grid -->
             <div class="row">
-                <div class="card">
-                    <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="">
+                <div class="card" data-name="KK Girls Hostel" data-location="Geeta nagar samta colony" data-distance="0.9" data-price="6000" data-sharing="single,two,four" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="KK Girls Hostel">
+                    </div>
                     <h4>KK Girls Hostel</h4>
-                    <p>
-                        <ul>
-                            <li>Location:Geeta nagar samta colony </li>
-                            <li>Distance from NITRR:900m</li>
-                            <li>Rate: Between 6k to 9.5 k</li>
-                            <li>Room Sharing: Single/Two/Four </li>
-                            <li>Contact Info: +91 75099 99092</li>
-                        </ul>
-                    </p>
-                    <p>Rating: <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </p>
-                    <a href="tel:+91 75099 99092" class="btn">Contact</a>
-                </div>
-                <div class="card">
-                    <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="">
-                    <h4>Kusum Girls Hostel </h4>
                     <ul>
-                        <li>Location:Kanchanganga colony phase-2 ,rohinipuram </li>
-                        <li>Distance from NITRR:1.5km</li>
-                        <li>Rate:3000</li>
-                        <li>Sharing:Two/Three</li>
-                        <li>Contact Info:6263368489</li>
+                        <li><strong>Location:</strong> Geeta Nagar, Samta Colony</li>
+                        <li><strong>Distance:</strong> 900m from NITRR</li>
+                        <li><strong>Rate:</strong> ₹6,000 - ₹9,500 / month</li>
+                        <li><strong>Sharing:</strong> Single / Two / Four</li>
+                        <li><strong>Contact:</strong> +91 75099 99092</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                    <a href="tel:6263368489" class="btn">Contact</a>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:+917509999092" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
-                <div class="card">
-                    <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="">
+
+                <div class="card" data-name="Kusum Girls Hostel" data-location="Kanchanganga colony phase-2, rohinipuram" data-distance="1.5" data-price="3000" data-sharing="two,three" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="Kusum Girls Hostel">
+                    </div>
+                    <h4>Kusum Girls Hostel</h4>
+                    <ul>
+                        <li><strong>Location:</strong> Kanchanganga Colony Phase-2, Rohinipuram</li>
+                        <li><strong>Distance:</strong> 1.5 Km from NITRR</li>
+                        <li><strong>Rate:</strong> ₹3,000 / month</li>
+                        <li><strong>Sharing:</strong> Two / Three sharing</li>
+                        <li><strong>Contact:</strong> 62633 68489</li>
+                    </ul>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:6263368489" class="btn"><i class="fas fa-phone"></i> Contact</a>
+                </div>
+
+                <div class="card" data-name="Geeta Sadan" data-location="Kota, near railway fatak road" data-distance="1.0" data-price="2500" data-sharing="two" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="Geeta Sadan">
+                    </div>
                     <h4>Geeta Sadan</h4>
                     <ul>
-                        <li>Location:Kota, near railway fatak road</li>
-                        <li>Distance from NITRR:1 Km</li>
-                        <li>Rate:2500</li>
-                        <li>Sharing:Two</li>
-                        <li>Contact Info:9827530645</li>
+                        <li><strong>Location:</strong> Kota, near Railway Fatak Road</li>
+                        <li><strong>Distance:</strong> 1 Km from NITRR</li>
+                        <li><strong>Rate:</strong> ₹2,500 / month</li>
+                        <li><strong>Sharing:</strong> Two sharing</li>
+                        <li><strong>Contact:</strong> 98275 30645</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                    <a href="tel:9827530645" class="btn">Contact</a>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:9827530645" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
-                <div class="card">
-                    <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="">
+
+                <div class="card" data-name="DL Satyam Homes" data-location="Amanaka" data-distance="1.2" data-price="6800" data-sharing="two,three,four" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="DL Satyam Homes">
+                    </div>
                     <h4>DL Satyam Homes</h4>
                     <ul>
-                        <li>Location: Amanaka</li>
-                        <li>Distance from NITRR:1.2 Km</li>
-                        <li>Rate: 6800 (four sharing)</li>
-                        <li>Sharing:Two/Three/Four</li>
-                        <li>Contact Info:+91 96070 22222</li>
+                        <li><strong>Location:</strong> Amanaka</li>
+                        <li><strong>Distance:</strong> 1.2 Km from NITRR</li>
+                        <li><strong>Rate:</strong> ₹6,800 / month (Four sharing)</li>
+                        <li><strong>Sharing:</strong> Two / Three / Four</li>
+                        <li><strong>Contact:</strong> +91 96070 22222</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-                    <a href="tel:+91 96070 22222" class="btn">Contact</a>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:+919607022222" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
-               
-                <div class="card">
-                    <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="">
+
+                <div class="card" data-name="Sargun Hostel" data-location="Khanchanganga phase 2" data-distance="1.6" data-price="5000" data-sharing="single,two" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="Sargun Hostel">
+                    </div>
                     <h4>Sargun Hostel</h4>
                     <ul>
-                        <li>Location:Khanchanganga phase 2</li>
-                        <li>Distance from NITRR:1.6 Km</li>
-                        <li>Rate:Single-7500, Double-5000(mess+wifi)</li>
-                        <li>Sharing:Single/Two</li>
-                        <li>Contact Info:+91 70003 65683</li>
+                        <li><strong>Location:</strong> Khanchanganga Phase 2</li>
+                        <li><strong>Distance:</strong> 1.6 Km from NITRR</li>
+                        <li><strong>Rate:</strong> Single: ₹7,500 | Double: ₹5,000 (mess+wifi)</li>
+                        <li><strong>Sharing:</strong> Single / Two</li>
+                        <li><strong>Contact:</strong> +91 70003 65683</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-               
-                    <a href="tel:+91 70003 65683" class="btn">Contact</a>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:+917000365683" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
 
-                <div class="card">
-                    <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="">
+                <div class="card" data-name="Sushil Girls Hostel" data-location="Behind science college" data-distance="0.6" data-price="3000" data-sharing="three,four" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="Sushil Girls Hostel">
+                    </div>
                     <h4>Sushil Girls Hostel</h4>
                     <ul>
-                        <li>Location:Behind science college </li>
-                        <li>Distance from NITRR:600m</li>
-                        <li>Rate:3000</li>
-                        <li>Sharing:Three/Four</li>
-                        <li>Contact Info:9300272527</li>
+                        <li><strong>Location:</strong> Behind Science College</li>
+                        <li><strong>Distance:</strong> 600m from NITRR</li>
+                        <li><strong>Rate:</strong> ₹3,000 / month</li>
+                        <li><strong>Sharing:</strong> Three / Four sharing</li>
+                        <li><strong>Contact:</strong> 93002 72527</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-               
-                    <a href="tel:9300272527" class="btn">Contact</a>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:9300272527" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
-             
-                <div class="card">
-                    <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="">
+
+                <div class="card" data-name="J.B.M. Girls Hostel" data-location="Near Kota" data-distance="0.4" data-price="2500" data-sharing="two,three" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="J.B.M. Girls Hostel">
+                    </div>
                     <h4>J.B.M. Girls Hostel</h4>
                     <ul>
-                        <li>Location:Near Kota </li>
-                        <li>Distance from NITRR:400m</li>
-                        <li>Rate:2500</li>
-                        <li>Sharing:Double/Three</li>
-                        <li>Contact Info:7773069063</li>
+                        <li><strong>Location:</strong> Near Kota</li>
+                        <li><strong>Distance:</strong> 400m from NITRR</li>
+                        <li><strong>Rate:</strong> ₹2,500 / month</li>
+                        <li><strong>Sharing:</strong> Double / Three sharing</li>
+                        <li><strong>Contact:</strong> 77730 69063</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-               
-                    <a href="tel:7773069063" class="btn">Contact</a>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:7773069063" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
-                <div class="card">
-                    <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="">
+
+                <div class="card" data-name="Manglam Girls Hostel" data-location="Gol Chowk, Rohinipuram" data-distance="2.0" data-price="2500" data-sharing="single,two" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="Manglam Girls Hostel">
+                    </div>
                     <h4>Manglam Girls Hostel</h4>
                     <ul>
-                        <li>Location:Gol Chowk, Rohinipuram </li>
-                        <li>Distance from NITRR:2 Km</li>
-                        <li>Rate:2500-4500(Depends on sharing and A.C)</li>
-                        <li>Sharing: Single/Double</li>
-                        <li>Contact Info:07999646510</li>
+                        <li><strong>Location:</strong> Gol Chowk, Rohinipuram</li>
+                        <li><strong>Distance:</strong> 2 Km from NITRR</li>
+                        <li><strong>Rate:</strong> ₹2,500 - ₹4,500 (Depends on sharing & A.C)</li>
+                        <li><strong>Sharing:</strong> Single / Double</li>
+                        <li><strong>Contact:</strong> 079996 46510</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-               
-                    <a href="tel:07999646510" class="btn">Contact</a>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:07999646510" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
- <div class="card">
-                    <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="">
+
+                <div class="card" data-name="Pusp Villa" data-location="Near Rupendra Chandrakar Shop" data-distance="0.7" data-price="7000" data-sharing="two" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="Pusp Villa">
+                    </div>
                     <h4>Pusp Villa</h4>
                     <ul>
-                        <li>Location:Near Rupendra Chandrakar Shop </li>
-                        <li>Distance from NITRR:700m</li>
-                        <li>Rate:7000</li>
-                        <li>Sharing: Two Sharing </li>
-                        <li>Contact Info:9575775927 </li>
+                        <li><strong>Location:</strong> Near Rupendra Chandrakar Shop</li>
+                        <li><strong>Distance:</strong> 700m from NITRR</li>
+                        <li><strong>Rate:</strong> ₹7,000 / month</li>
+                        <li><strong>Sharing:</strong> Two sharing</li>
+                        <li><strong>Contact:</strong> 95757 75927</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-               
-                    <a href="tel:9575775927" class="btn">Contact</a>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:9575775927" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
 
-                 <div class="card">
-                    <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="">
+                <div class="card" data-name="Guru Shakti Sadan Girls Hostel" data-location="Geeta Nagar, Samta Colony, Raipur" data-distance="1.0" data-price="3000" data-sharing="four,six" data-rating="4">
+                    <div class="card-img-container">
+                        <img src="images/GIRLS_HOSTEL_ICON (1).png" alt="Guru Shakti Sadan Girls Hostel">
+                    </div>
                     <h4>Guru Shakti Sadan Girls Hostel</h4>
                     <ul>
-                        <li>Location:Geeta Nagar, Samta Colony, Raipur</li>
-                        <li>Distance from NITRR:1km</li>
-                        <li>Rate:Depends on sharing</li>
-                        <li>Sharing: Four/Six </li>
-                        <li>Contact Info:  093296 22940 </li>
+                        <li><strong>Location:</strong> Geeta Nagar, Samta Colony, Raipur</li>
+                        <li><strong>Distance:</strong> 1 Km from NITRR</li>
+                        <li><strong>Rate:</strong> ₹3,000 - ₹5,000 (Depends on sharing)</li>
+                        <li><strong>Sharing:</strong> Four / Six sharing</li>
+                        <li><strong>Contact:</strong> 093296 22940</li>
                     </ul>
-                </p>
-                <p>Rating: <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                    <span class="fa fa-star"></span>
-                </p>
-               
-                    <a href="tel: 093296 22940" class="btn">Contact</a>
+                    <p class="rating-stars">Rating: 
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </p>
+                    <a href="tel:09329622940" class="btn"><i class="fas fa-phone"></i> Contact</a>
                 </div>
-
-
-
-                
+            </div>
+        </div>
     </section>
 
+    <!-- Embedded Google Form Modal -->
+    <div id="addHostelModal" class="modal-backdrop">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-header-text">
+                    <h3><i class="fas fa-plus-circle"></i> Add New Girls Hostel / Mess</h3>
+                    <p>Submit details to list your hostel, PG, or mess facility on NIT-MITRRA</p>
+                </div>
+                <div class="modal-header-actions">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSSZwcrIsM2cvFoISH-twlLFx5209JEzxH3mVhksL3O1lZkw/viewform?usp=dialog" target="_blank" class="btn-open-external">
+                        <i class="fas fa-external-link-alt"></i> Open in New Tab
+                    </a>
+                    <button type="button" id="closeAddHostelModal" class="modal-close-btn">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSSZwcrIsM2cvFoISH-twlLFx5209JEzxH3mVhksL3O1lZkw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading Google Form...</iframe>
+            </div>
+        </div>
+    </div>
 
-
-
-        <!-- footer -->
-        <section class="foot">
-            <footer>
-               <div class="container">
-                   <div class="row">
-                         <div class="col" id="company">
-                             <img src="images/logo3.png" alt="" class="logo">
-                             
-                             <p>
-                               Made with Love, By Room No:31 <i class="fa-regular fa-heart"></i>
-                             </p>
-                            
-                             <div class="social">
-                                <a href="https://www.linkedin.com/in/mansi-chandrakar-85494a2a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.linkedin.com/in/shikha-yadav-3830902b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://www.linkedin.com/in/mokshda-bhatt-7878b5288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-                               <a href="https://www.linkedin.com/in/rubeena-roy-318b69279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
-                             </div>
+    <!-- footer -->
+    <section class="foot">
+        <footer>
+           <div class="container">
+               <div class="row">
+                     <div class="col" id="company">
+                         <img src="images/logo3.png" alt="" class="logo">
+                         
+                         <p>
+                           Made with Love, By Room No:31 <i class="fa-regular fa-heart"></i>
+                         </p>
+                        
+                         <div class="social">
+                            <a href="https://www.linkedin.com/in/mansi-chandrakar-85494a2a9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/shikha-yadav-3830902b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/mokshda-bhatt-7878b5288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                           <a href="https://www.linkedin.com/in/rubeena-roy-318b69279?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
                          </div>
-       
-       
-                         <div class="col" id="services">
-                            <h3>Links</h3>
-                            <div class="links">
-                               <a href="index.html">Home</a>
-                               <a href="studyresources.html">Study Resources</a>
-                               <a href="girlshostel.html">Near by Hostels</a>
-                               <a href="club.html">Clubs and Fests</a>
-                            </div>
-                         </div>
-       
-                         <div class="col" id="useful-links">
-                            <h3>Links</h3>
-                            <div class="links">
-                               <!-- <a href="#">Subject Guidance</a> -->
-                               <a href="tourist_att.html">Explore Raipur</a>
-                               <a href="queryform.html"> Ask your Doubts</a>
-                               <a href="faqindex.html">FAQ</a>
-                               <a href="team.html">Our Team</a>
-                            </div>
-                         </div>
-       
-                         <!-- <div class="col" id="contact">
-                             <h3>Contact</h3>
-                             <div class="contact-details">
-                                <i class="fa fa-location"></i>
-                                <p>FF-42, Procube Avenue, <br> NY, USA</p>
-                             </div>
-                             <div class="contact-details">
-                                <i class="fa fa-phone"></i>
-                                <p>+1-8755856858</p>
-                             </div>
-                         </div> -->
-                   </div>
-       
-                   <!-- <div class="row">
-                         <div class="form">
-                           <form action="">
-                               <input type="text" placeholder="Email here...">
-                               <button><i class="fa fa-paper-plane"></i></button>
-                           </form>
-                         </div>
-                   </div> -->
-       
+                     </div>
+   
+                     <div class="col" id="services">
+                        <h3>Links</h3>
+                        <div class="links">
+                           <a href="index.html">Home</a>
+                           <a href="studyresources.html">Study Resources</a>
+                           <a href="boyshostel.html">Near by Hostels</a>
+                           <a href="club.html">Clubs and Fests</a>
+                        </div>
+                     </div>
+   
+                     <div class="col" id="useful-links">
+                        <h3>Links</h3>
+                        <div class="links">
+                           <a href="tourist_att.html">Explore Raipur</a>
+                           <a href="queryform.html">Ask your Doubts</a>
+                           <a href="faqindex.html">FAQ</a>
+                           <a href="team.html">Our Team</a>
+                        </div>
+                     </div>
                </div>
-            </footer>
-           </section>
-
-           <script src="navbar2.js"></script>
+           </div>
+        </footer>
+    </section>
+    <script src="navbar2.js"></script>
+    <script src="hostel_filter.js"></script>
 </body>
 </html>

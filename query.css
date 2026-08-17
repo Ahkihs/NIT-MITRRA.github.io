@@ -17,9 +17,14 @@ input,
 textarea {
   font-family: Kanit, sans-serif;
 }
-.qall
-{
-  margin-top: 40px;
+.qall {
+  margin-top: 80px;
+}
+
+@media (max-width: 1080px) {
+  .qall {
+    margin-top: 70px;
+  }
 }
 .doubt {
   position: relative;
@@ -103,68 +108,64 @@ form {
 
 .input-container {
   position: relative;
-  margin: 1rem 0;
+  margin: 0.85rem 0;
 }
 
 .input {
   width: 100%;
   outline: none;
   border: 2px solid #741717;
-  background: none;
-  padding: 0.6rem 1.2rem;
+  background: #ffffff;
+  padding: 0.7rem 1.2rem;
   color: #741717;
   font-weight: 500;
   font-size: 0.95rem;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   border-radius: 25px;
-  transition: 0.3s;
+  transition: all 0.25s ease;
+}
+
+.input::placeholder {
+  color: rgba(116, 23, 23, 0.6);
+  font-size: 0.9rem;
+}
+
+.input:focus {
+  border-color: #741717;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(116, 23, 23, 0.15);
 }
 
 textarea.input {
   padding: 0.8rem 1.2rem;
-  min-height: 150px;
-  border-radius: 22px;
-  resize: none;
+  min-height: 120px;
+  border-radius: 18px;
+  resize: vertical;
   overflow-y: auto;
 }
 
-.input-container label {
-  position: absolute;
-  top: 50%;
-  left: 15px;
-  transform: translateY(-50%);
-  padding: 0 0.4rem;
-  color: #741717;
-  font-size: 0.9rem;
-  font-weight: 400;
-  font: Kanit;
-  pointer-events: none;
-  z-index: 1000;
-  transition: 0.5s;
-}
-
-.input-container.textarea label {
-  top: 1rem;
-  transform: translateY(0);
-}
-
 .btn {
-  padding: 0.6rem 1.3rem;
-  background: transparent;
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #741717;
   border: 2px solid #741717;
-  font-size: 0.95rem;
-  color: #741717;
-  line-height: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
   border-radius: 25px;
   outline: none;
   cursor: pointer;
-  transition: 0.3s;
-  margin: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(116, 23, 23, 0.25);
+  margin-top: 0.4rem;
 }
 
 .btn:hover {
-  background-color: transparent;
- 
+  background: #efc109;
+  color: #741717;
+  border-color: #741717;
+  box-shadow: 0 6px 18px rgba(239, 193, 9, 0.4);
+  transform: translateY(-2px);
 }
 
 .input-container span {
